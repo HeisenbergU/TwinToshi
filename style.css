@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'ToshiFont';
+    src: url('geoparody\ hv.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    /* font-family: 'ToshiFont'; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blue; 
+    color: white;
+    text-align: center;
+   
+    
+}
+
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column; /* Image and text stacked vertically */
+}
+
+#splash-screen img {
+    width: 200px; /* Adjust size as needed */
+}
+
+#splash-screen h1 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+header {
+    padding: 20px;
+    font-family: 'ToshiFont';
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav ul li a:hover {
+    border-color: white;
+}
+
+h1 {
+    font-size: 96px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 24px;
+}
+
+p span {
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 24px;
+}
+
+main img {
+    width: 400px; /* Adjust size as needed */
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    overflow: auto; /* Enable scrolling after splash screen */
+    height: 100%; /* Ensure content takes full height */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contract-address {
+    background-color: #1A1A1A;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.slider {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden; /* Hides the overflow content */
+    position: relative;
+    height: 200px; /* Adjust the height to fit the images */
+}
+
+.slider-container {
+    display: flex;
+    width: calc(100% * 1); /* Adjusts width based on the number of images */
+    animation: slide 15s infinite linear; /* Adjust the duration for speed */
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Controls the image size */
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+.roadmap-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin: 0 20px;
+    color: #ff4d4d;
+}
+
+.phase-image {
+    width: 150px;
+    height: auto;
+}
+
+.phase {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background-color: #1b306a;
+}
+
+.phase h2 {
+    font-size: 32px;
+    color: #ff4d4d;
+}
+
+.phase ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phase ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.hidden {
+    display: none;
+}
+
+/* Style the splash screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Style the splash screen text */
+#splash-screen h1 {
+    color: white;
+    font-size: 3rem; /* Adjust font size */
+}
