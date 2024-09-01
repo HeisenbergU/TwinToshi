@@ -274,3 +274,105 @@ html {
     color: white;
     font-size: 3rem; /* Adjust font size */
 }
+/* Tablet size - max-width 768px */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    main img {
+        width: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .phase h2 {
+        font-size: 28px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .phase ul li {
+        font-size: 16px;
+    }
+
+    .slider-container {
+        flex-direction: column;
+    }
+
+    .slider-image {
+        max-width: 150px;
+    }
+}
+
+/* Mobile size - max-width 480px */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    main img {
+        width: 200px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .phase h2 {
+        font-size: 24px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .phase ul li {
+        font-size: 14px;
+    }
+
+    .slider-image {
+        max-width: 100px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .contract-address {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
